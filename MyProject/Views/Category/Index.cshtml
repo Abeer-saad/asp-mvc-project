@@ -1,0 +1,37 @@
+﻿@model List<MyProject.Models.Category>
+
+<h2>Categories</h2>
+
+<table class="table">
+
+    <thead>
+
+        <tr>
+
+            <th>Id</th>
+
+            <th>Name</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var category in Model)
+
+        {
+
+            <tr>
+
+                <td>@category.Id</td>
+
+                <td>@category.Name</td>
+
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>
